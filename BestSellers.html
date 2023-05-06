@@ -67,12 +67,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -145,6 +139,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="BestSellers.html">Best Sellers</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
 
                 </div>
@@ -157,7 +157,31 @@
                             </div>
                         </div>
                     </div>
-                
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-solid fa-globe"></i> <i class="bi bi-caret-down-fill"></i></i>
+                            </a>
+                            <ul class="dropdown-menu position-absolute" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-solid fa-dollar-sign"></i>
+                            </a>
+                            <ul class="dropdown-menu currency" aria-labelledby="currencyDropdown" id="currencyMenu">
+                                <li><a class="dropdown-item" href="#">Loading...</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                     <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
                         data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
@@ -167,35 +191,13 @@
                         <span
                             class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                    
+                    <a class="nav-icon position-relative text-decoration-none" href="Login.html">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
                         <span
                             class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
                     </a>
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-solid fa-dollar-sign"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="currencyDropdown" id="currencyMenu">
-                                <li><a class="dropdown-item" href="#">Loading...</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-solid fa-globe"></i> <i class="bi bi-caret-down-fill"></i></i>
-                            </a>
-                            <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">English</a></li>
-                                <li><a class="dropdown-item" href="#">Arabic</a></li>
-                            </ul>
-                        </li>
-                        
-                    </ul>
+                    
                 </div>
             </div>
 
@@ -229,42 +231,27 @@
 
             <div class="col-lg-3">
                 <h1 class="h2 pb-4">Categories</h1>
-                <ul class="list-unstyled templatemo-accordion">
+                <ul class="list-unstyled templatemo-accordion ">
                     <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            All Categories
-                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none mb-3" href="#">
+                            <div>
+                                All Categories
+                                <button class="bg-transparent border-0" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <i class="fas fa-chevron-circle-down border-0"></i>
+                                </button>
                         </a>
-                        <ul class="collapse show list-unstyled pl-3">
-                            <li class="mb-3 mt-3"><a class="text-decoration-none" active href="#"> Castile Soaps</a></li>
-                            <li class="mb-3"><a class="text-decoration-none" href="#">Cold Pressed Oil</a></li>
-                            <li class="mb-3"><a class="text-decoration-none" href="#">Essential Oils</a></li>
-                            <li class="mb-3"><a class="text-decoration-none" href="#">Feminine Hygiene</a></li>
-                            <li class="mb-3"><a class="text-decoration-none" href="#">Health Food</a></li>
-                            <li class="mb-3"><a class="text-decoration-none" href="#">Raw Butters</a></li>
-                        </ul>
+                        <div class="collapse" id="collapseExample">
+                            <ul class="collapse show list-unstyled border-0">
+                                <li class="mb-3"><a class="text-decoration-none" active href="#"> Castile Soaps</a></li>
+                                <li class="mb-3"><a class="text-decoration-none" href="#">Cold Pressed Oil</a></li>
+                                <li class="mb-3"><a class="text-decoration-none" href="#">Essential Oils</a></li>
+                                <li class="mb-3"><a class="text-decoration-none" href="#">Feminine Hygiene</a></li>
+                                <li class="mb-3"><a class="text-decoration-none" href="#">Health Food</a></li>
+                                <li class="mb-3"><a class="text-decoration-none" href="#">Raw Butters</a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <!-- <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Sale
-                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
-                        </a>
-                        <ul id="collapseTwo" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Sport</a></li>
-                            <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                        </ul>
-                    </li>
-                    <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Product
-                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
-                        </a>
-                        <ul id="collapseThree" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Bag</a></li>
-                            <li><a class="text-decoration-none" href="#">Sweather</a></li>
-                            <li><a class="text-decoration-none" href="#">Sunglass</a></li>
-                        </ul>
-                    </li> -->
                 </ul>
             </div>
 
@@ -274,32 +261,6 @@
                         <h2 class="mb-4">Our Best Sellers</h2>
                         <img class="w-100" src="assets/images/BEST_SELLERS.webp" alt="">
                     </div>
-                    <!-- <div class="col-md-9">
-                        <ul class="list-inline shop-top-menu pb-3 pt-1">
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="#">All</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="#">Castile Soaps</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none" href="#">Cold Pressed Oil</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none" href="#">Essential Oils</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none" href="#">Feminine Hygiene</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none" href="#">Health Food</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none" href="#">Raw Butters</a>
-                            </li>
-                        </ul>
-                    </div> -->
-                    
                     <div class="col-md-6 pb-4">
                         <div class="d-flex">
                             <select class="form-control">
@@ -317,7 +278,7 @@
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="assets/images/BestSellers/01.webp">
                                 <div
-                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-end">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i
                                                     class="far fa-heart"></i></a></li>
@@ -364,7 +325,7 @@
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="assets/images/BestSellers/02.jpg">
                                 <div
-                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-end">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i
                                                     class="far fa-heart"></i></a></li>
@@ -411,7 +372,7 @@
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="assets/images/BestSellers/03.webp">
                                 <div
-                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-end">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i
                                                     class="far fa-heart"></i></a></li>
@@ -458,7 +419,7 @@
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="assets/images/BestSellers/04.webp">
                                 <div
-                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-end">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i
                                                     class="far fa-heart"></i></a></li>
@@ -505,7 +466,7 @@
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="assets/images/BestSellers/05.webp">
                                 <div
-                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-end">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i
                                                     class="far fa-heart"></i></a></li>
@@ -552,7 +513,7 @@
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="assets/images/BestSellers/06.webp">
                                 <div
-                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-end">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i
                                                     class="far fa-heart"></i></a></li>
@@ -599,7 +560,7 @@
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="assets/images/BestSellers/07.webp">
                                 <div
-                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-end">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i
                                                     class="far fa-heart"></i></a></li>
@@ -646,7 +607,7 @@
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="assets/images/BestSellers/08.jpg">
                                 <div
-                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-end">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i
                                                     class="far fa-heart"></i></a></li>
@@ -693,7 +654,7 @@
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="assets/images/BestSellers/09.webp">
                                 <div
-                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-end">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i
                                                     class="far fa-heart"></i></a></li>
