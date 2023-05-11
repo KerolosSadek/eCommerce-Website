@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bliss Of Earth- Product Detail Page</title>
+    <title>Bliss Of Earth- Product Details Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -190,7 +190,7 @@
                         data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <a class="nav-icon position-relative text-decoration-none" href="cart.html">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span
                             class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
@@ -228,6 +228,18 @@
     </div>
 
 
+    <!-- Start Breadcrumb -->
+    <div class="bcrumb py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" id="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-location-arrow fa-xs"></i> Home</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- End Breadcrumb -->
 
     <!-- Open Content -->
     <section class="bg-light">
@@ -436,63 +448,73 @@
     <!-- Review form -->
     <div class="review mt-5">
         <div class="container">
-                <button class="btn w-100" type="button" data-toggle="collapse" data-target="#review-form"
-                    aria-expanded="false" aria-controls="review-form">
-                    Write a review
-                </button>
-                <div class="collapse" id="review-form">
-                    <form>
-                        <div class="form-group mt-4 mb-4">
-                            <label class="fw-bold mb-2" for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            <button class="btn w-100" type="button" data-toggle="collapse" data-target="#review-form"
+                aria-expanded="false" aria-controls="review-form">
+                Write a review
+            </button>
+            <div class="collapse" id="review-form">
+                <form>
+                    <div class="form-group mt-4 mb-4">
+                        <label class="fw-bold mb-2" for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group mt-4 mb-4">
+                        <label class="fw-bold mb-2" for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group mt-4 mb-4">
+                        <label class="fw-bold" for="rating">Rating</label>
+                        <div class="star-rating ms-4">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5" title="5 stars"></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4" title="4 stars"></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3" title="3 stars"></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2" title="2 stars"></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1" title="1 star"></label>
                         </div>
-                        <div class="form-group mt-4 mb-4">
-                            <label class="fw-bold mb-2" for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                        </div>
-                        <div class="form-group mt-4 mb-4">
-                            <label class="fw-bold" for="rating">Rating</label>
-                            <div class="star-rating ms-4">
-                                <input type="radio" id="star5" name="rating" value="5">
-                                <label for="star5" title="5 stars"></label>
-                                <input type="radio" id="star4" name="rating" value="4">
-                                <label for="star4" title="4 stars"></label>
-                                <input type="radio" id="star3" name="rating" value="3">
-                                <label for="star3" title="3 stars"></label>
-                                <input type="radio" id="star2" name="rating" value="2">
-                                <label for="star2" title="2 stars"></label>
-                                <input type="radio" id="star1" name="rating" value="1">
-                                <label for="star1" title="1 star"></label>
-                            </div>                  
-                        </div>
-                        <div class="form-group mt-4 mb-4">
-                            <label class="fw-bold mb-2" for="title">Review Title</label>
-                            <input type="text" class="form-control" id="title" placeholder="Enter a review title">
-                        </div>
-                        <div class="form-group mt-4 mb-4">
-                            <label class="fw-bold mb-2" for="body">Body of Review</label>
-                            <textarea class="form-control" id="body" rows="3" placeholder="Enter your review"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit Review</button>
-                    </form>
-                </div>
-                <div class="mt-5">
-                    <h4>Shipping & Returns</h4>
-                    <h6 class="mt-4 mb-3 fw-bold">Returns</h6>
-                    <p>You may return most new, unopened items within 30 days of delivery for a full refund. <br>   
-                        You should expect to receive your refund within four weeks of giving your package to the return shipper, however, in many cases you will receive a refund more quickly. 
-                        This time period includes the transit time for us to receive your return from the shipper (5 to 10 business days), the time it takes us to process your return once we receive it (3 to 5 business days), and the time it takes your bank to process our refund request (5 to 10 business days).
-                        <br>
-                        If you need to return an item, simply login to your account, view the order using the 'Complete Orders' link under the My Account menu and click the Return Item(s) button. We'll notify you via e-mail of your refund once we've received and processed the returned item.
-                    </p>
-                    <h6 class="mt-4 mb-3 fw-bold">Shipping</h6>
-                    <p>We can ship to virtually any address in the world. Note that there are restrictions on   some products, and some products cannot be shipped to international destinations. <br>
+                    </div>
+                    <div class="form-group mt-4 mb-4">
+                        <label class="fw-bold mb-2" for="title">Review Title</label>
+                        <input type="text" class="form-control" id="title" placeholder="Enter a review title">
+                    </div>
+                    <div class="form-group mt-4 mb-4">
+                        <label class="fw-bold mb-2" for="body">Body of Review</label>
+                        <textarea class="form-control" id="body" rows="3" placeholder="Enter your review"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Review</button>
+                </form>
+            </div>
+            <div class="mt-5">
+                <h4>Shipping & Returns</h4>
+                <h6 class="mt-4 mb-3 fw-bold">Returns</h6>
+                <p>You may return most new, unopened items within 30 days of delivery for a full refund. <br>
+                    You should expect to receive your refund within four weeks of giving your package to the return
+                    shipper, however, in many cases you will receive a refund more quickly.
+                    This time period includes the transit time for us to receive your return from the shipper (5 to 10
+                    business days), the time it takes us to process your return once we receive it (3 to 5 business
+                    days), and the time it takes your bank to process our refund request (5 to 10 business days).
+                    <br>
+                    If you need to return an item, simply login to your account, view the order using the 'Complete
+                    Orders' link under the My Account menu and click the Return Item(s) button. We'll notify you via
+                    e-mail of your refund once we've received and processed the returned item.
+                </p>
+                <h6 class="mt-4 mb-3 fw-bold">Shipping</h6>
+                <p>We can ship to virtually any address in the world. Note that there are restrictions on some products,
+                    and some products cannot be shipped to international destinations. <br>
 
-                        When you place an order, we will estimate shipping and delivery dates for you based on the availability of your items and the shipping options you choose. Depending on the shipping provider you choose, shipping date estimates may appear on the shipping quotes page.
-                        <br>
-                        Please also note that the shipping rates for many items we sell are weight-based. The weight of any such item can be found on its detail page. To reflect the policies of the shipping companies we use, all weights will be rounded up to the next full pound.
-                    </p>
-                </div>
+                    When you place an order, we will estimate shipping and delivery dates for you based on the
+                    availability of your items and the shipping options you choose. Depending on the shipping provider
+                    you choose, shipping date estimates may appear on the shipping quotes page.
+                    <br>
+                    Please also note that the shipping rates for many items we sell are weight-based. The weight of any
+                    such item can be found on its detail page. To reflect the policies of the shipping companies we use,
+                    all weights will be rounded up to the next full pound.
+                </p>
+            </div>
         </div>
     </div>
 
@@ -1190,6 +1212,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/breadcrumb.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
