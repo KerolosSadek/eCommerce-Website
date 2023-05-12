@@ -16,4 +16,20 @@ fetch("https://blissofearth.abanoubgeorge.info/assets/js/currencies.json")
 });
 
 
+// Button to top
+
+window.addEventListener("scroll", function () {
+    var btnTop = document.getElementById("btn-top");
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btnTop.style.display = "block";
+    } else {
+        btnTop.style.display = "none";
+    }
+});
+
+document.getElementById("btn-top").addEventListener("click", function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
 

@@ -1,3 +1,6 @@
+"use strict";
+
+// Breadcrumb
 const breadcrumb = document.getElementById("breadcrumb");
 const currentPage = document.title.split("/").pop().replace('.html', '');
 const links = document.title.split("/").filter((link) => link !== "");
@@ -20,3 +23,7 @@ currentBreadcrumbItem.classList.add("active");
 currentBreadcrumbItem.setAttribute("aria-current", "page");
 currentBreadcrumbItem.innerText = currentPage;
 breadcrumb.appendChild(currentBreadcrumbItem);
+
+
+
+

@@ -143,8 +143,9 @@
 }
 
 .review button:hover {
-    background-color: #88644f;
+    background-color: #fff;
     color: #59ab6e;
+    border: 1px solid #59ab6e;
 }
 
 .star-rating {

@@ -6,12 +6,11 @@ Table of contents
 1. Typography
 2. General
 3. Nav
-4. Hero Carousel
+
 5. Accordion
 6. Shop
 7. Product
-8. Carousel Hero
-9. Carousel Brand
+
 10. Services
 11. Contact map
 12. Footer
@@ -127,10 +126,6 @@ div {
   margin-right: 20px;
 }
 
-Hero Carousel
-#template-mo-zay-hero-carousel {
-  background: #efefef !important;
-}
 
 .navbar-nav .currency{
   overflow-y: scroll;
@@ -266,7 +261,7 @@ Hero Carousel
   color: #69bb7e;
 }
 .button button:hover{
-  background-color: transparent !important;
+  background-color: #FFF !important;
 }
 /* End Featured Products */
 
@@ -284,6 +279,17 @@ Hero Carousel
 /* Shop */
 .shop-top-menu a:hover {
   color: #69bb7e !important;
+}
+
+/* Start Insta */
+
+.card {
+  border: none;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
 }
 
 
@@ -328,15 +334,6 @@ Hero Carousel
   color: #000;
 }
 
-#carousel-related-product .slick-slide:focus {
-  outline: none !important;
-}
-
-#carousel-related-product .slick-dots li button:before {
-  font-size: 15px;
-  margin-top: 20px;
-}
-
 /* Brand */
 .brand-img {
   filter: grayscale(100%);
@@ -347,24 +344,6 @@ Hero Carousel
 .brand-img:hover {
   filter: grayscale(0%);
   opacity: 1;
-}
-
-/* Carousel Hero */
-#template-mo-zay-hero-carousel .carousel-indicators li {
-  margin-top: -50px;
-  background-color: #59ab6e;
-}
-
-#template-mo-zay-hero-carousel .carousel-control-next i,
-#template-mo-zay-hero-carousel .carousel-control-prev i {
-  color: #59ab6e !important;
-  font-size: 2.8em !important;
-}
-
-/* Carousel Brand */
-.tempaltemo-carousel .h1 {
-  font-size: .5em !important;
-  color: #000 !important;
 }
 
 /* Services */
@@ -459,19 +438,7 @@ Hero Carousel
   color: #59ab6e;
 }
 
-.username {
-  text-transform: capitalize;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-}
-
-input {
-  width: 100%;
-  border: 1px solid transparent;
-  box-shadow: none
-}
-
-.facebook-icon,
+.login .facebook-icon,
 .twitter-icon,
 .google-icon {
   border: 1px solid transparent;
@@ -501,11 +468,6 @@ input {
   transition: 0.5s linear;
 }
 
-.hr-1,
-.hr-2 {
-  border: 1px solid rgb(194, 187, 187);
-  transition: 0.2s linear;
-}
 
 .input-1,
 .input-2 {
@@ -516,16 +478,15 @@ input {
 
 #user {
   font-size: 20px;
-  color: rgb(194, 187, 187)
 }
 
 #lock {
   font-size: 20px;
-  color: rgb(194, 187, 187)
 }
 
-.login-btn button:hover{
+.login .login-btn:hover{
   background-color: transparent !important;
+  color: #69bb7e;
 }
 
 a {
@@ -542,28 +503,60 @@ a:hover {
   color: rgb(148, 141, 141)
 }
 
-.forget-password:hover,
-.sign-up:hover {
+.forget-password:hover{
   color: #69bb7e;
 }
 
-.sign-up {
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color: #59ab6e;
-}
 .login{
-  text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  color: #59ab6e;
+  color: #000;
+}
+.login .login-page:hover,
+.login .sign-up:hover{
+  color: #69bb7e !important;
+}
+.sign-up{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px !important;
+  color: #000;
 }
 
 .show-me {
   display: none
 }
-/* Cart Design */
+/* Blog Design */
+
+.news-section {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+}
+
+.news-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.card {
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.news-section .card:hover {
+  transform: translateY(-10px);
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
 /* Custom CSS */
 
 .card-title {
@@ -649,6 +642,14 @@ a:hover {
   cursor: pointer;
 }
 
+/* button to top */
+.btn-top {
+  position: fixed;
+  bottom: 40px;
+  left: 50px;
+  display: none;
+}
+
 
 *:focus {
   outline: none;
@@ -697,12 +698,10 @@ a:hover {
   height: 6px;
 }
 
-@media (min-width: 576px) {
-  .tempaltemo-carousel .h1 {
-    font-size: 1em !important;
-  }
-}
 
+.brands{
+  max-width: 95%;
+}
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   #templatemo_main_nav .navbar-nav {
@@ -713,12 +712,10 @@ a:hover {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   #templatemo_main_nav .navbar-nav {
-    max-width: 550px;
+    max-width: 650px;
   }
 
-  #template-mo-zay-hero-carousel .carousel-item {
-    min-height: 30rem !important;
-  }
+
 
   .product-wap .h3,
   .product-wap li,
