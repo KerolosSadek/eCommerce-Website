@@ -1,20 +1,20 @@
 // Start Home Page
 
 // Show More Button
-const showMoreButton = document.getElementById('show-more');
-const hiddenCards = document.querySelectorAll('.col-md-4.d-none');
+const showButton1 = document.getElementById('show-more');
+const hCards1 = document.querySelectorAll('.hide-1.d-none');
 
-let index = 0;
-showMoreButton.addEventListener('click', () => {
-    for (let i = index; i < index + 6; i++) {
-        if (hiddenCards[i]) {
-            hiddenCards[i].classList.remove('d-none');
+let num1 = 0;
+showButton1.addEventListener('click', () => {
+    for (let i = num1; i < num1 + 6; i++) {
+        if (hCards1[i]) {
+            hCards1[i].classList.remove('d-none');
         }
     }
-    index += 6;
-    if (index >= hiddenCards.length) {
-        showMoreButton.classList.add('disabled');
-        showMoreButton.textContent = 'No More Product';
+    num1 += 6;
+    if (num1 >= hCards1.length) {
+        showButton1.classList.add('disabled');
+        showButton1.textContent = 'No More Product';
     }
 });
 // button 2

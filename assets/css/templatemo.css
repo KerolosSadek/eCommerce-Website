@@ -555,6 +555,11 @@ a:hover {
   font-size: 16px;
   line-height: 1.5;
 }
+.news-section a:hover,
+.news-details a:hover{
+  background-color: #FFF !important;
+  color: #69bb7e;
+}
 
 
 /* Custom CSS */
@@ -648,6 +653,7 @@ a:hover {
   bottom: 40px;
   left: 50px;
   display: none;
+  z-index: 10000;
 }
 
 

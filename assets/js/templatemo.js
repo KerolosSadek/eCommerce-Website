@@ -44,7 +44,7 @@ $(document).ready(function () {
             $(".hr-2").css("border-color", "black");
             $("#lock").css("color", "blueviolet")
         })
-        $(".hide,.hide-1,.first-name-hide,.last-name-hide,.email-hide,.password-signup-hide,.confirm-password-signup-hide").css("color", "red")
+        $(".first-name-hide,.last-name-hide,.email-hide,.password-signup-hide,.confirm-password-signup-hide").css("color", "red")
         $(".sign-up").click(function () {
             $(".hide-me").css("display", "none");
             $(".show-me").css("display", "block");
