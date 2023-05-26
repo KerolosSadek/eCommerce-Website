@@ -473,6 +473,7 @@ div {
     font-size: 2rem
   }
 }
+
 @media (max-width: 496px) {
   .social-icons a {
     /* line-height: 3; */
@@ -515,11 +516,13 @@ div {
   -ms-flex-flow: column wrap;
   flex-flow: column wrap
 }
-.social-icons .btn:hover{
+
+.social-icons .btn:hover {
   background-color: #FFF !important;
   color: #69bb7e;
 }
-.social-icons .btn:hover i{
+
+.social-icons .btn:hover i {
   color: #69bb7e !important;
 }
 
@@ -598,6 +601,33 @@ div {
 
 .form-control {
   border: 1px solid #e8e8e8;
+}
+
+/* ABout Us Section */
+
+.bg-image {
+  background-image: url("../images/about-us.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.section-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #000;
 }
 
 /* Footer */
