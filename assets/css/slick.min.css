@@ -142,12 +142,15 @@
     color: #FFF;
 }
 
-.review button:hover {
-    background-color: #fff;
-    color: #59ab6e;
+.review button:hover,
+.social-icons a:hover {
+    background-color: #fff !important;
+    color: #59ab6e !important;
     border: 1px solid #59ab6e;
 }
-
+.social-icons a:hover i{
+    color: #59ab6e !important;
+}
 .star-rating {
     display: inline-flex;
     flex-direction: row-reverse;
@@ -169,7 +172,12 @@
 .star-rating>input:checked~label:before {
     color: #ff9f1c;
 }
-
+/* Single Recipe */
+.instructions .section-title{
+    padding-bottom: 8px;
+    border-bottom: 2px solid #59ab6e;
+    font-size: 18px;
+}
 
 
 

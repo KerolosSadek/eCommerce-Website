@@ -1,9 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Bliss Of Earth - News Page</title>
+    <title>Bliss Of Earth - Recipes Page</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="assets/images/icon/01.png">
@@ -17,7 +17,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-</head>
+
 </head>
 
 <body>
@@ -247,9 +247,25 @@
     <!-- Close Header -->
 
 
+
+    <!-- Start Breadcrumb -->
+    <div class="bcrumb py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" id="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-location-arrow fa-xs"></i>
+                            Home</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- End Breadcrumb -->
+
+
     <!-- Modal -->
     <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hide-2n="true">
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="w-100 pt-1 mb-5 text-right">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -264,227 +280,447 @@
             </form>
         </div>
     </div>
-    <!-- Start Breadcrumb -->
-    <div class="bcrumb py-3">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb" id="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-location-arrow fa-xs"></i>
-                            Home</a></li>
-                </ol>
-            </nav>
-        </div>
-    </div>
 
-    <!-- End Breadcrumb -->
-    <!-- Start News Details -->
 
-    <div class="news-details py-4">
-        <div class="container">
+
+    <!-- Start Content -->
+    <div class="container py-5">
+        <div class="row">
+
+            <!-- <div class="col-lg-3">
+                <h1 class="h2 pb-4">Categories</h1>
+                <ul class="list-unstyled templatemo-accordion ">
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none mb-3" href="#">
+                            <div>
+                                All Categories
+                                <button class="bg-transparent border-0" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    <i class="fas fa-chevron-circle-down border-0"></i>
+                                </button>
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <ul class="collapse show list-unstyled border-0">
+                                <li class="mb-3"><a class="text-decoration-none" active href="#"> Castile Soaps</a></li>
+                                <li class="mb-3"><a class="text-decoration-none" href="#">Cold Pressed Oil</a></li>
+                                <li class="mb-3"><a class="text-decoration-none" href="#">Essential Oils</a></li>
+                                <li class="mb-3"><a class="text-decoration-none" href="#">Feminine Hygiene</a></li>
+                                <li class="mb-3"><a class="text-decoration-none" href="#">Health Food</a></li>
+                                <li class="mb-3"><a class="text-decoration-none" href="#">Raw Butters</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div> -->
+
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <h2 class="mb-4">Our Recipes</h2>
+                        <img class="w-100" src="assets/images/recipes-banner.png" alt="">
+                    </div>
+                    <div class="col-md-6 pb-4">
+                        <div class="d-flex">
+                            <select class="form-control">
+                                <option>Featured</option>
+                                <option>A to Z</option>
+                                <option>Item</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
             <div class="row">
-                <div class="col-md-8">
-                    <div class="title mt-3">
-                        <h2>News Title</h2>
-                    </div>
-                    <div class="desc mt-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, itaque id rerum nostrum quae
-                        provident accusantium deserunt iusto ducimus et quas molestiae ullam est? Magnam non atque sint
-                        pariatur harum quis porro sunt natus tempore officia quos doloremque maxime neque, ipsum cumque
-                        animi expedita veritatis.
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/01.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark mt-5">DRIED CURRY
+                                ESSENTIALS</a>
+                            <p class="card-text text-center mt-4 mb-2">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto mt-5">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="assets/images/news.jpg" class="w-100" alt="news">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/01.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark mt-5">TURKISH DELIGHT</a>
+                            <p class="card-text text-center mt-4 mb-2">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto mt-5">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="button d-flex justify-content-center mt-4">
-                    <a href="blog.html" class="btn btn-success mt-4 mb-4">Show More News <i
-                            class="fas fa-angle-double-right fa-xs"></i></a>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/01.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark mt-5">DRIED CURRY
+                                ESSENTIALS</a>
+                            <p class="card-text text-center mt-4 mb-2">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto mt-5">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/01.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark mt-5">TURKISH DELIGHT</a>
+                            <p class="card-text text-center mt-4 mb-2">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto mt-5">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/01.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark mt-5">DRIED CURRY
+                                ESSENTIALS</a>
+                            <p class="card-text text-center mt-4 mb-2">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto mt-5">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/01.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark mt-5">TURKISH DELIGHT</a>
+                            <p class="card-text text-center mt-4 mb-2">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto mt-5">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/01.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark mt-5">DRIED CURRY
+                                ESSENTIALS</a>
+                            <p class="card-text text-center mt-4 mb-2">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto mt-5">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/01.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark mt-5">TURKISH DELIGHT</a>
+                            <p class="card-text text-center mt-4 mb-2">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto mt-5">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/01.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark mt-5">DRIED CURRY
+                                ESSENTIALS</a>
+                            <p class="card-text text-center mt-4 mb-2">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto mt-5">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/01.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark mt-5">TURKISH DELIGHT</a>
+                            <p class="card-text text-center mt-4 mb-2">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto mt-5">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/01.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark mt-5">DRIED CURRY
+                                ESSENTIALS</a>
+                            <p class="card-text text-center mt-4 mb-2">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto mt-5">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/01.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark mt-5">TURKISH DELIGHT</a>
+                            <p class="card-text text-center mt-4 mb-2">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto mt-5">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                <div div="row">
+                    <ul class="pagination pagination-lg justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="#"
+                                tabindex="-1">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark"
+                                href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Start Brands -->
+
+    <section class="bg-light py-5">
+        <div class="container my-4">
+            <div class="row text-center py-3 brands">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Our Certifications</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="col-lg-9 m-auto tempaltemo-carousel">
+                    <div class="row d-flex flex-row">
+                        <!--Controls-->
+                        <div class="col-1 align-self-center">
+                            <a class="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="prev">
+                                <i class="text-light fas fa-chevron-left"></i>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+
+                        <!--Carousel Wrapper-->
+                        <div class="col">
+                            <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="templatemo-slide-brand"
+                                data-bs-ride="carousel">
+                                <!--Slides-->
+                                <div class="carousel-inner product-links-wap" role="listbox">
+
+                                    <!--First slide-->
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/images/Certifications/06.avif" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/images/Certifications/02.avif" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/images/Certifications/03.avif" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/images/Certifications/04.avif" alt="Brand Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End First slide-->
+
+                                    <!--Second slide-->
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/images/Certifications/05.avif" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/images/Certifications/02.avif" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/images/Certifications/03.avif" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/images/Certifications/04.avif" alt="Brand Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Second slide-->
+
+                                    <!--Third slide-->
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/images/Certifications/06.avif" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/images/Certifications/02.avif" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/images/Certifications/03.avif" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/images/Certifications/05.avif" alt="Brand Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Third slide-->
+
+                                </div>
+                                <!--End Slides-->
+                            </div>
+                        </div>
+                        <!--End Carousel Wrapper-->
+
+                        <!--Controls-->
+                        <div class="col-1 align-self-center">
+                            <a class="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="next">
+                                <i class="text-light fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Start News Details -->
-    <!-- Start Insta -->
+    <!--End Brands-->
 
-    <!-- <section class="insta">
-                <div class="container py-4">
-                    <h2 class="mb-4">#BLISSOFEARTH ON INSTA</h2>
-                    <div class="row mb-4">
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/01.jpg" alt="Image 1">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/02.jpg" alt="Image 2">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/03.jpg" alt="Image 3">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/04.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/02.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/03.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/02.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/01.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/01.jpg" alt="Image 1">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/02.jpg" alt="Image 2">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/03.jpg" alt="Image 3">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/04.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/02.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/03.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/02.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/01.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
 
-    <div class="insta py-4 mt-4">
-        <div class="container">
-            <h2 class="mb-4">#BLISSOFEARTH ON INSTA</h2>
-            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/images/Insta/01.jpg" class="d-block w-100 vh-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/Insta/02.jpg" class="d-block w-100 vh-100" alt="...">
-
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/Insta/03.jpg" class="d-block w-100 vh-100" alt="...">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
-            </div>
-
-        </div>
-    </div>
-    <!-- End Insta -->
     <!-- Start Footer -->
         <footer id="colophon" class="site-footer" role="contentinfo" itemscope="itemscope"
         itemtype="http://schema.org/WPFooter">
@@ -626,6 +862,7 @@
                 </div>
             </div>
         </div>
+
     </footer> -->
     <!-- End Footer -->
     <!-- Start Btn To Top -->
@@ -642,13 +879,8 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/ShowBtn.js"></script>
     <script src="assets/js/breadcrumb.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-        integrity="sha384-Qg00WFl9r0Xr6rUqNLv1ffTSSKEFFCDCKVyHZ+sVt8KuvG99nWw5RNvbhuKgif9z"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVpTOIoub+OrCXa"></script>
+
     <!-- End Script -->
 </body>
 

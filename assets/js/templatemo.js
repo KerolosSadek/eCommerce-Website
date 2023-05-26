@@ -160,3 +160,17 @@ $(document).ready(function () {
         })
     })
 });
+
+var a = document.getElementById("search-icon")
+    , b = document.getElementById("search-close")
+    , c = document.querySelector(".site-header__search");
+a.addEventListener("click", function () {
+    c.classList.add("site-header__search--active")
+}),
+    b.addEventListener("click", function () {
+        c.classList.remove("site-header__search--active")
+    })
+
+
+
+

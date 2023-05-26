@@ -1,9 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Bliss Of Earth - News Page</title>
+    <title>Bliss Of Earth- Recipe Details Page</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="assets/images/icon/01.png">
@@ -17,7 +17,11 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-</head>
+
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+
 </head>
 
 <body>
@@ -249,7 +253,7 @@
 
     <!-- Modal -->
     <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hide-2n="true">
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="w-100 pt-1 mb-5 text-right">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -264,6 +268,8 @@
             </form>
         </div>
     </div>
+
+
     <!-- Start Breadcrumb -->
     <div class="bcrumb py-3">
         <div class="container">
@@ -277,216 +283,324 @@
     </div>
 
     <!-- End Breadcrumb -->
-    <!-- Start News Details -->
 
-    <div class="news-details py-4">
-        <div class="container">
+    <!-- Open Content -->
+    <section class="bg-light">
+        <div class="container pb-5">
             <div class="row">
-                <div class="col-md-8">
-                    <div class="title mt-3">
-                        <h2>News Title</h2>
-                    </div>
-                    <div class="desc mt-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, itaque id rerum nostrum quae
-                        provident accusantium deserunt iusto ducimus et quas molestiae ullam est? Magnam non atque sint
-                        pariatur harum quis porro sunt natus tempore officia quos doloremque maxime neque, ipsum cumque
-                        animi expedita veritatis.
-                    </div>
+                <div class="col-lg-5 mt-5">
+                    <img class="card-img img-fluid" src="assets/images/Single-Product/01.webp" alt="Card image cap"
+                        id="product-detail">
                 </div>
-                <div class="col-md-4">
-                    <img src="assets/images/news.jpg" class="w-100" alt="news">
-                </div>
-                <div class="button d-flex justify-content-center mt-4">
-                    <a href="blog.html" class="btn btn-success mt-4 mb-4">Show More News <i
-                            class="fas fa-angle-double-right fa-xs"></i></a>
+                <!-- col end -->
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="recipe-content">
+                                <h2 class="recipe-content__title mb-4" itemprop="name">Reb A Sugarfree Stevia Powder</h2>
+                                <div itemprop="description">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio dolorum sapiente
+                                        sunt pariatur aliquid, unde quisquam quae, facere distinctio eveniet facilis
+                                        deleniti magnam id. Reprehenderit aliquid molestias blanditiis sed dolorem.</p>
+                                </div>
+                                <div class="share-section mt-5">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-3 mt-4">
+                                                <h5 class="mt-2">Share In</h5>
+                                            </div>
+                                            <div class="social-icons col-lg-9 mt-4">
+                                                <div class="row justify-content-between">
+                                                    <div class="col-lg-4">
+                                                        <button class="btn btn-success w-100 mb-3"><a href=""></a><i
+                                                                class="fab fa-facebook-f text-white"></i>
+                                                            Facebook</button>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <button class="btn btn-success w-100 mb-3"><a href=""></a><i
+                                                                class="fab fa-pinterest-p text-white"></i>
+                                                            Pinterest</button>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <button class="btn btn-success w-100"><a href=""></a><i
+                                                                class="fas fa-print text-white"></i>
+                                                            Print</button>
+                                                    </div>
+                                                </div>
+                                                <button class="bg-transparent border-0" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseExample" aria-expanded="false"
+                                                    aria-controls="collapseExample">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recipe-content__instructions mt-5">
+                                    <meta itemprop="totalTime" content="PT35M">
+                                    <div class="recipe-content__instructions__col">
+                                        <h6 class="hdg-sm" itemprop="">Prep Time</h6>
+                                        <meta itemprop="prepTime" content="PT10M">
+                                        <span class="text-success">
+                                            10 <sup>min</sup> </span>
+                                    </div>
+                                    <div class="recipe-content__instructions__col">
+                                        <h6 class="hdg-sm">Cook Time</h6>
+                                        <meta itemprop="cookTime" content="PT25M">
+                                        <span class="text-success">
+                                            25 <sup>min</sup> </span>
+                                    </div>
+                                    <div class="recipe-content__instructions__col">
+                                        <h6 class="hdg-sm">Servings</h6>
+                                        <span class="text-success" itemprop="recipeYield">10</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Start News Details -->
-    <!-- Start Insta -->
-
-    <!-- <section class="insta">
-                <div class="container py-4">
-                    <h2 class="mb-4">#BLISSOFEARTH ON INSTA</h2>
-                    <div class="row mb-4">
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/01.jpg" alt="Image 1">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/02.jpg" alt="Image 2">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/03.jpg" alt="Image 3">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/04.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/02.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/03.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/02.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/01.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/01.jpg" alt="Image 1">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/02.jpg" alt="Image 2">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/03.jpg" alt="Image 3">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/04.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/02.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/03.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/02.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="image-container">
-                                <img src="assets/images/Insta/01.jpg" alt="Image 4">
-                                <div class="overlay">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-    <div class="insta py-4 mt-4">
+    </section>
+    <div class="instructions py-5">
         <div class="container">
-            <h2 class="mb-4">#BLISSOFEARTH ON INSTA</h2>
-            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/images/Insta/01.jpg" class="d-block w-100 vh-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/Insta/02.jpg" class="d-block w-100 vh-100" alt="...">
+            <div class="row mb-4">
+                <div class="col-4">
+                    <h3 class="section-title">FOR THE CRUST</h3>
+                    <ul class="list-unstyled lh-lg">
+                        <li class="fw-bold">3 1/2 cup All-purpose flour</li>
+                        <li class="fw-bold">2 1/2 tsp Baking powder</li>
+                        <li class="fw-bold">1/4 tsp Salt</li>
+                        <li class="fw-bold">1 package Rondelé® Garlic & Herbs cold</li>
+                        <li class="fw-bold">2 cup Shredded sharp cheddar cheese</li>
+                        <li class="fw-bold">1-2 whole Jalapeños seeded and chopped</li>
+                        <li class="fw-bold">16 tbsp Cold salted butter cubed, plus melted butter for brushing the
+                            biscuits</li>
+                        <li class="fw-bold">1 cup Cold buttermilk</li>
+                    </ul>
+                </div>
+                <div class="col-8">
+                    <h3 class="section-title">CRUST</h3>
+                    <ul class="list-unstyled lh-lg">
+                        <li><span class="fw-bold">1 - </span> Preheat the oven to 400 degrees F.</li>
+                        <li><span class="fw-bold">2 - </span> Combine the flour, baking powder and salt. Cut cold
+                            shredded butter into the
+                            flour mixture and work with hands until the mixture clumps together to form larger pea-size
+                            balls. You can also do this step in a food processor, if you have one..</li>
+                        <li><span class="fw-bold">3 - </span> Add the Rondelé®, the cheddar and jalapeños, mixing gently
+                            to combine.
+                            Drizzle in the buttermilk and mix again until combined.</li>
+                        <li><span class="fw-bold">4 - </span> Turn the dough out onto a clean surface and pat into a
+                            1-inch thick square.
+                            Cut the dough into 4 pieces. Stack the pieces on top of each other. Press down to flatten.
+                            Dust the surface with flour and roll the dough into a 1 inch thick rectangle or square. Cut
+                            into 12 square biscuits or use a round biscuit cutter. Transfer to a parchment-lined baking
+                            sheet and freeze 15 minutes, to chill.</li>
+                        <li><span class="fw-bold">5 - </span> Remove the biscuits from the freezer and brush with melted
+                            butter. You can
+                            cover the tops with fresh jalapeño rings (optional). Transfer to the oven and bake for 20-25
+                            minutes, until golden on top.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-4">
+                    <h3 class="section-title">FOR THE FILLING</h3>
+                    <ul class="list-unstyled lh-lg">
+                        <li class="fw-bold">3 1/2 cup All-purpose flour</li>
+                        <li class="fw-bold">2 1/2 tsp Baking powder</li>
+                        <li class="fw-bold">1/4 tsp Salt</li>
+                        <li class="fw-bold">1 package Rondelé® Garlic & Herbs cold</li>
+                        <li class="fw-bold">2 cup Shredded sharp cheddar cheese</li>
+                        <li class="fw-bold">1-2 whole Jalapeños seeded and chopped</li>
+                        <li class="fw-bold">16 tbsp Cold salted butter cubed, plus melted butter for brushing the
+                            biscuits</li>
+                        <li class="fw-bold">1 cup Cold buttermilk</li>
+                    </ul>
+                </div>
+                <div class="col-8">
+                    <h3 class="section-title">FILLING</h3>
+                    <ul class="list-unstyled lh-lg">
+                        <li><span class="fw-bold">1 - </span> Preheat the oven to 400 degrees F.</li>
+                        <li><span class="fw-bold">2 - </span> Combine the flour, baking powder and salt. Cut cold
+                            shredded butter into the
+                            flour mixture and work with hands until the mixture clumps together to form larger pea-size
+                            balls. You can also do this step in a food processor, if you have one..</li>
+                        <li><span class="fw-bold">3 - </span> Add the Rondelé®, the cheddar and jalapeños, mixing gently
+                            to combine.
+                            Drizzle in the buttermilk and mix again until combined.</li>
+                        <li><span class="fw-bold">4 - </span> Turn the dough out onto a clean surface and pat into a
+                            1-inch thick square.
+                            Cut the dough into 4 pieces. Stack the pieces on top of each other. Press down to flatten.
+                            Dust the surface with flour and roll the dough into a 1 inch thick rectangle or square. Cut
+                            into 12 square biscuits or use a round biscuit cutter. Transfer to a parchment-lined baking
+                            sheet and freeze 15 minutes, to chill.</li>
+                        <li><span class="fw-bold">5 - </span> Remove the biscuits from the freezer and brush with melted
+                            butter. You can
+                            cover the tops with fresh jalapeño rings (optional). Transfer to the oven and bake for 20-25
+                            minutes, until golden on top.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-4">
+                    <h3 class="section-title">FOR THE TOPPINGS</h3>
+                    <ul class="list-unstyled lh-lg">
+                        <li class="fw-bold">3 1/2 cup All-purpose flour</li>
+                        <li class="fw-bold">2 1/2 tsp Baking powder</li>
+                        <li class="fw-bold">1/4 tsp Salt</li>
+                        <li class="fw-bold">1 package Rondelé® Garlic & Herbs cold</li>
+                        <li class="fw-bold">2 cup Shredded sharp cheddar cheese</li>
+                        <li class="fw-bold">1-2 whole Jalapeños seeded and chopped</li>
+                        <li class="fw-bold">16 tbsp Cold salted butter cubed, plus melted butter for brushing the
+                            biscuits</li>
+                        <li class="fw-bold">1 cup Cold buttermilk</li>
+                    </ul>
+                </div>
+                <div class="col-8">
+                    <h3 class="section-title">SERVING & STORING</h3>
+                    <ul class="list-unstyled lh-lg">
+                        <li><span class="fw-bold">1 - </span> Preheat the oven to 400 degrees F.</li>
+                        <li><span class="fw-bold">2 - </span> Combine the flour, baking powder and salt. Cut cold
+                            shredded butter into the
+                            flour mixture and work with hands until the mixture clumps together to form larger pea-size
+                            balls. You can also do this step in a food processor, if you have one..</li>
+                        <li><span class="fw-bold">3 - </span> Add the Rondelé®, the cheddar and jalapeños, mixing gently
+                            to combine.
+                            Drizzle in the buttermilk and mix again until combined.</li>
+                        <li><span class="fw-bold">4 - </span> Turn the dough out onto a clean surface and pat into a
+                            1-inch thick square.
+                            Cut the dough into 4 pieces. Stack the pieces on top of each other. Press down to flatten.
+                            Dust the surface with flour and roll the dough into a 1 inch thick rectangle or square. Cut
+                            into 12 square biscuits or use a round biscuit cutter. Transfer to a parchment-lined baking
+                            sheet and freeze 15 minutes, to chill.</li>
+                        <li><span class="fw-bold">5 - </span> Remove the biscuits from the freezer and brush with melted
+                            butter. You can
+                            cover the tops with fresh jalapeño rings (optional). Transfer to the oven and bake for 20-25
+                            minutes, until golden on top.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/Insta/03.jpg" class="d-block w-100 vh-100" alt="...">
+    </div>
+    <!-- Close Content -->
+
+    <!-- Start Related -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-left p-2 pb-3">
+                <h4>Related Recipes</h4>
+                <div id="carousel-related-product">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/01.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$360.00</li>
+                            </ul>
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark">DRIED CURRY
+                                ESSENTIALS</a>
+                            <p class="card-text">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <p class="text-muted">Reviews (74)</p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Know More</a></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/02.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$480.00</li>
+                            </ul>
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark">TURKISH DELIGHT</a>
+                            <p class="card-text">
+                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed,
+                                commodo
+                                ullamcorper.
+                            </p>
+                            <p class="text-muted">Reviews (48)</p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Know More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="singleRecipe.html">
+                            <img src="./assets/images/Featured Products/03.webp" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$360.00</li>
+                            </ul>
+                            <a href="singleRecipe.html" class="h2 text-decoration-none text-dark">DRIED CURRY
+                                ESSENTIALS</a>
+                            <p class="card-text">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <p class="text-muted">Reviews (74)</p>
+                            <div class="button row justify-content-end">
+                                <div class="col-auto">
+                                    <button class="btn btn-success"><a class="text-decoration-none fs-6"
+                                            href="singleRecipe.html">Know More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
-    </div>
-    <!-- End Insta -->
+        <!--Start Carousel Wrapper-->
+
+    </section>
+    <!-- End Article -->
+
+
     <!-- Start Footer -->
-        <footer id="colophon" class="site-footer" role="contentinfo" itemscope="itemscope"
+    <footer id="colophon" class="site-footer" role="contentinfo" itemscope="itemscope"
         itemtype="http://schema.org/WPFooter">
         <div class="site-footer__content">
             <nav id="footer-nav" class="site-footer__nav">
@@ -494,10 +608,12 @@
                     <ul id="menu-footer-menu" class="menu">
                         <li id="menu-item-241"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-241">
-                            <a href="index.html">Home</a></li>
+                            <a href="index.html">Home</a>
+                        </li>
                         <li id="menu-item-387"
                             class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-387">
-                            <a href="blog.html">Blog</a></li>
+                            <a href="blog.html">Blog</a>
+                        </li>
                         <li id="menu-item-1331"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1331"><a
                                 href="recipes.html">Recipes</a></li>
@@ -512,21 +628,26 @@
             </nav>
             <div class="site-footer__social">
                 <ul>
-                    <li><a rel="noopener noreferrer" href="https://twitter.com/blissofearth" target="_blank"><i class="fab fa-twitter"></i>
-                                <use xlink:href="#icon-twitter"></use>
-                            </svg></a></li>
-                    <li><a rel="noopener noreferrer" href="https://www.pinterest.com/blissofearth/"
-                            target="_blank"><i class="fab fa-pinterest-p"></i>
-                                <use xlink:href="#icon-pinterest"></use>
-                            </svg></a></li>
-                    <li><a rel="noopener noreferrer" href="https://web.facebook.com/blissofearth"
-                            target="_blank"><i class="fab fa-facebook-square"></i>
-                                <use xlink:href="#icon-facebook"></use>
-                            </svg></a></li>
-                    <li><a rel="noopener noreferrer" href="https://www.instagram.com/blissofearth/"
-                            target="_blank"><i class="fab fa-instagram"></i>
-                                <use xlink:href="#icon-instagram"></use>
-                            </svg></a></li>
+                    <li><a rel="noopener noreferrer" href="https://twitter.com/blissofearth" target="_blank"><i
+                                class="fab fa-twitter"></i>
+                            <use xlink:href="#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li><a rel="noopener noreferrer" href="https://www.pinterest.com/blissofearth/" target="_blank"><i
+                                class="fab fa-pinterest-p"></i>
+                            <use xlink:href="#icon-pinterest"></use>
+                            </svg>
+                        </a></li>
+                    <li><a rel="noopener noreferrer" href="https://web.facebook.com/blissofearth" target="_blank"><i
+                                class="fab fa-facebook-square"></i>
+                            <use xlink:href="#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li><a rel="noopener noreferrer" href="https://www.instagram.com/blissofearth/" target="_blank"><i
+                                class="fab fa-instagram"></i>
+                            <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                        </a></li>
                 </ul>
             </div>
         </div>
@@ -626,6 +747,7 @@
                 </div>
             </div>
         </div>
+
     </footer> -->
     <!-- End Footer -->
     <!-- Start Btn To Top -->
@@ -642,14 +764,16 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/ShowBtn.js"></script>
     <script src="assets/js/breadcrumb.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-        integrity="sha384-Qg00WFl9r0Xr6rUqNLv1ffTSSKEFFCDCKVyHZ+sVt8KuvG99nWw5RNvbhuKgif9z"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVpTOIoub+OrCXa"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- End Script -->
+
+    <!-- Start Slider Script -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- End Slider Script -->
+
 </body>
 
 </html>

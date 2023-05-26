@@ -22,44 +22,80 @@
 
 <body>
     <!-- Start Top Nav -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
-        <div class="container text-light">
-            <div class="w-100 d-flex justify-content-between">
-                <div>
-                    <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none"
-                        href="mailto:info@company.com">BlissOfEarth@company.com</a>
-                    <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+    <nav class="navbar top-nav navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+
+            <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active me-3">
+                            <i class="fa fa-envelope mx-2 text-white"></i>
+                            <a class="navbar-sm-brand text-light text-decoration-none fs-6"
+                                href="mailto:info@company.com">BlissOfEarth@company.com</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-phone mx-2 text-white"></i>
+                            <a class="navbar-sm-brand text-light text-decoration-none fs-6"
+                                href="tel:010-020-0340">010-020-0340</a>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <a class="text-light" href="https://www.facebook.com/blissofearth?_rdc=1&_rdr" target="_blank"
-                        rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/blissofearth/" target="_blank"><i
-                            class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://twitter.com/blissofearth" target="_blank"><i
-                            class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
-                </div>
+            </div>
+            <ul class="nav navbar-nav d-flex justify-content-between me-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link-2 dropdown-toggle text-decoration-none text-white" href="#" id="currencyDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-solid fa-dollar-sign"></i>
+                    </a>
+                    <ul class="dropdown-menu currency" aria-labelledby="currencyDropdown" id="currencyMenu">
+                        <li><a class="dropdown-item" href="#">Loading...</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav d-flex justify-content-between me-4">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link-2 dropdown-toggle text-decoration-none text-white" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-solid fa-globe"></i> <i class="bi bi-caret-down-fill"></i></i>
+                    </a>
+                    <ul class="dropdown-menu position-absolute" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Arabic</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <i class="search fas fa-search text-white me-4" id="search-icon"></i>
+            <div class="site-header__search">
+                <form role="search" method="get" id="searchform" class="search-form" action="">
+                    <div>
+                        <label class="screen-reader-text" for="s"></label>
+                        <input type="text" value="" name="s" id="s" class="search-form__input" placeholder="Search..."
+                            fdprocessedid="3vqk15">
+                        <span id="search-close" class="search-form__close">
+                            <i class="fas fa-times icon--close-small text-dark"></i>
+                        </span>
+                    </div>
+                </form>
             </div>
         </div>
     </nav>
-    <!-- Close Top Nav -->
 
+    <!-- Close Top Nav -->
 
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
-    
+
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
                 <img class="w-75" src="./assets/images/Logo/01.jpg" alt="">
             </a>
-    
+
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
                 id="templatemo_main_nav">
                 <div class="flex-fill">
@@ -130,18 +166,21 @@
                                 <li><a class="dropdown-item" href="shop.html">Combos & Gifts</a></li>
                                 <li><a class="dropdown-item" href="shop.html">Health Food</a></li>
                                 <li><a class="dropdown-item" href="shop.html">Den of Man</a></li>
-    
+
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="NewArri.html">New Arrivals</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="Recipes.html">Recipes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="BestSellers.html">Best Sellers</a>
+                            <a class="nav-link" href="BestSellers.html">Best Selling</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
@@ -149,7 +188,7 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
-    
+
                 </div>
                 <div class="navbar align-self-center d-flex">
                     <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
@@ -162,7 +201,7 @@
                     </div>
                 </div>
                 <div class="navbar align-self-center d-flex">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto d-block d-lg-none">
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -174,7 +213,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto d-block d-lg-none">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -185,7 +224,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
+                    <a class="nav-icon d-none d-lg-inline d-block d-lg-none" href="#" data-bs-toggle="modal"
                         data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
                     </a>
@@ -194,19 +233,19 @@
                         <span
                             class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                     </a>
-    
-                    <a class="nav-icon position-relative text-decoration-none" href="Login.html">
+
+                    <a class="nav-icon position-relative text-decoration-none me-lg-4" href="Login.html">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
                         <span
                             class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
                     </a>
-    
+
                 </div>
             </div>
-    
         </div>
     </nav>
     <!-- Close Header -->
+
 
     <!-- Modal -->
     <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
@@ -851,7 +890,55 @@
 
 
     <!-- Start Footer -->
-    <footer class="bg-dark" id="tempaltemo_footer">
+        <footer id="colophon" class="site-footer" role="contentinfo" itemscope="itemscope"
+        itemtype="http://schema.org/WPFooter">
+        <div class="site-footer__content">
+            <nav id="footer-nav" class="site-footer__nav">
+                <div class="menu-footer-menu-container">
+                    <ul id="menu-footer-menu" class="menu">
+                        <li id="menu-item-241"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-241">
+                            <a href="index.html">Home</a></li>
+                        <li id="menu-item-387"
+                            class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-387">
+                            <a href="blog.html">Blog</a></li>
+                        <li id="menu-item-1331"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1331"><a
+                                href="recipes.html">Recipes</a></li>
+                        <li id="menu-item-5592"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5592"><a
+                                href="BestSellers.html">Best Selling</a></li>
+                        <li id="menu-item-511"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-511"><a
+                                href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="site-footer__social">
+                <ul>
+                    <li><a rel="noopener noreferrer" href="https://twitter.com/blissofearth" target="_blank"><i class="fab fa-twitter"></i>
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg></a></li>
+                    <li><a rel="noopener noreferrer" href="https://www.pinterest.com/blissofearth/"
+                            target="_blank"><i class="fab fa-pinterest-p"></i>
+                                <use xlink:href="#icon-pinterest"></use>
+                            </svg></a></li>
+                    <li><a rel="noopener noreferrer" href="https://web.facebook.com/blissofearth"
+                            target="_blank"><i class="fab fa-facebook-square"></i>
+                                <use xlink:href="#icon-facebook"></use>
+                            </svg></a></li>
+                    <li><a rel="noopener noreferrer" href="https://www.instagram.com/blissofearth/"
+                            target="_blank"><i class="fab fa-instagram"></i>
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-footer__content__secondary mt-3">
+            <p class="copyright">© 2023 Bliss Of Earth ® • All Rights Reserved </p>
+        </div>
+    </footer>
+    <!-- <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
 
@@ -944,7 +1031,7 @@
             </div>
         </div>
 
-    </footer>
+    </footer> -->
     <!-- End Footer -->
     <!-- Start Btn To Top -->
     <div class="top-btn">
