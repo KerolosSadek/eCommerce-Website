@@ -475,9 +475,7 @@ div {
 }
 
 @media (max-width: 496px) {
-  .social-icons a {
-    /* line-height: 3; */
-  }
+
 }
 
 
@@ -888,7 +886,8 @@ div {
   font-size: 20px;
 }
 
-.login .login-btn:hover {
+.login .login-btn:hover,
+.login .verify:hover{
   background-color: transparent !important;
   color: #69bb7e;
 }
@@ -901,13 +900,13 @@ a:hover {
   text-decoration: none;
 }
 
-.forget-password {
+.accept {
   font-size: 15px;
   font-weight: 600;
   color: rgb(148, 141, 141)
 }
 
-.forget-password:hover {
+.accept:hover {
   color: #69bb7e;
 }
 

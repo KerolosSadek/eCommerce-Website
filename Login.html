@@ -368,9 +368,26 @@
                                 placeholder="Confirm password" required>
                         </div>
                     </div>
+                    <div class="row mb-3 show-me justify-content-between">
+                        <div class="col-md-5 mb-3 d-inline-block">
+                            <label for="Number" class="form-label"><i class="fas fa-sms"></i> Enter Your Phone Number</label>
+                            <input type="Number" class="form-control" id="Number" placeholder="Enter Number"
+                                required>
+                        </div>
+                        <div class="col-md-2 d-inline-block">
+                            <button class="btn btn-success d-inline  verify">Verify</button>
+                        </div>
+                        <div class="col-md-4 mt-4 mb-3 d-inline-block">
+                            <label for="confirmPassword" class="form-label"><i class="fa fa-lock" aria-hidden="true"
+                                    id="lock"></i> OTP</label>
+                            <input type="password" class="form-control" id="OTP"
+                                placeholder="OTP" required>
+                        </div>
+                    </div>
                     <div class="row show-me mb-4">
                         <div class="col pl-5">
-                            <a href="#"><span class="forget-password">I accept the <span
+                            <input type="checkbox" id="acept" name="acept" value="acept">
+                            <a href="#"><span class="accept">I accept the <span
                                         style="text-transform:capitalize;color:blue">terms
                                         of use</span>&
                                     <span style="text-transform:capitalize;color:blue">privacy policy</span> </a>
