@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Payment Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/images/icon/01.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon/01.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+</head>
+
+<body>
+    <!-- Start Top Nav -->
+    <nav class="navbar top-nav navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+
+            <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active me-3">
+                            <i class="fa fa-envelope mx-2 text-white"></i>
+                            <a class="navbar-sm-brand text-light text-decoration-none fs-6"
+                                href="mailto:info@company.com">BlissOfEarth@company.com</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-phone mx-2 text-white"></i>
+                            <a class="navbar-sm-brand text-light text-decoration-none fs-6"
+                                href="tel:010-020-0340">010-020-0340</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="nav navbar-nav d-flex justify-content-between me-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link-2 dropdown-toggle text-decoration-none text-white" href="#" id="currencyDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-solid fa-dollar-sign"></i>
+                    </a>
+                    <ul class="dropdown-menu currency" aria-labelledby="currencyDropdown" id="currencyMenu">
+                        <li><a class="dropdown-item" href="#">Loading...</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav d-flex justify-content-between me-4">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link-2 dropdown-toggle text-decoration-none text-white" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-solid fa-globe"></i> <i class="bi bi-caret-down-fill"></i></i>
+                    </a>
+                    <ul class="dropdown-menu position-absolute" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Arabic</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <i class="search fas fa-search text-white me-4" id="search-icon"></i>
+            <div class="site-header__search">
+                <form role="search" method="get" id="searchform" class="search-form" action="">
+                    <div>
+                        <label class="screen-reader-text" for="s"></label>
+                        <input type="text" value="" name="s" id="s" class="search-form__input" placeholder="Search..."
+                            fdprocessedid="3vqk15">
+                        <span id="search-close" class="search-form__close">
+                            <i class="fas fa-times icon--close-small text-dark"></i>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End Top Nav -->
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                <img class="w-75" src="./assets/images/Logo/01.jpg" alt="">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <li><a class="dropdown-item" href="mainCategories.html">Healty Salt</a></li>
+                                <li><a class="dropdown-item" href="mainCategories.html">Edible Seeds</a></li>
+                                <li><a class="dropdown-item" href="mainCategories.html">Organic Spices</a></li>
+                                <li><a class="dropdown-item" href="mainCategories.html">99.8% REB-A Stevia</a></li>
+                                <li><a class="dropdown-item" href="mainCategories.html">Cocoa Powder</a></li>
+                                <li><a class="dropdown-item" href="mainCategories.html">Herbs & Powders</a></li>
+                                <li><a class="dropdown-item" href="mainCategories.html">Natural Skin Care</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Oil
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                        <li><a class="dropdown-item" href="mainCategories.html">Essential Oils</a></li>
+                                        <li><a class="dropdown-item" href="mainCategories.html">Hair oils</a></li>
+                                        <li><a class="dropdown-item" href="mainCategories.html">Cold Pressed Oil</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Raw Butters
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                        <li><a class="dropdown-item" href="mainCategories.html">Shea Butter</a></li>
+                                        <li><a class="dropdown-item" href="mainCategories.html">Cocoa Butter</a></li>
+                                        <li><a class="dropdown-item" href="mainCategories.html">Mango Butter</a></li>
+                                        <li><a class="dropdown-item" href="mainCategories.html">Aloe Vera Gel</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Toners</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Feminine Hygiene
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                        <li><a class="dropdown-item" href="mainCategories.html">Panty Liners</a></li>
+                                        <li><a class="dropdown-item" href="mainCategories.html">Sanitary Napkins</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="mainCategories.html">Hygiene wash</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Clays & Powders
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                        <li><a class="dropdown-item" href="mainCategories.html">Clays</a></li>
+                                        <li><a class="dropdown-item" href="mainCategories.html">Powders</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="mainCategories.html">Castile Soaps</a></li>
+                                <li><a class="dropdown-item" href="mainCategories.html">Face Wash</a></li>
+                                <li><a class="dropdown-item" href="mainCategories.html">Combos & Gifts</a></li>
+                                <li><a class="dropdown-item" href="mainCategories.html">Health Food</a></li>
+                                <li><a class="dropdown-item" href="mainCategories.html">Den of Man</a></li>
+
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="NewArri.html">New Arrivals</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="Recipes.html">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="BestSellers.html">Best Selling</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto d-block d-lg-none">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-solid fa-globe"></i> <i class="bi bi-caret-down-fill"></i></i>
+                            </a>
+                            <ul class="dropdown-menu position-absolute" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto d-block d-lg-none">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-solid fa-dollar-sign"></i>
+                            </a>
+                            <ul class="dropdown-menu currency" aria-labelledby="currencyDropdown" id="currencyMenu">
+                                <li><a class="dropdown-item" href="#">Loading...</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="nav-icon d-none d-lg-inline d-block d-lg-none" href="#" data-bs-toggle="modal"
+                        data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="cart.html">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                    </a>
+
+                    <a class="nav-icon position-relative text-decoration-none me-lg-4" href="Login.html">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hide-2n="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Start Breadcrumb -->
+    <div class="bcrumb py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" id="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-location-arrow fa-xs"></i>
+                            Home</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- End Breadcrumb -->
+    <!-- Start Content  -->
+
+    <div class="container py-5">
+        <div class="content-payment">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="products col-md-12 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7">
+                                <div class="d-flex align-items-center">
+                                    <img width="100" height="100" src="assets/images/01.webp" alt="">
+                                    <span class="num position-relative badge rounded-pill bg-light text-dark">7</span>
+                                    <span class="text-black-50 fw-bold ms-2">Healthy Brazil Nut 500gm</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5 text-end">
+                                <h5 class="fw-bold">₹1,445.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products col-md-12 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7">
+                                <div class="d-flex align-items-center">
+                                    <img width="100" height="100" src="assets/images/01.webp" alt="">
+                                    <span class="num position-relative badge rounded-pill bg-light text-dark">7</span>
+                                    <span class="text-black-50 fw-bold ms-2">Healthy Brazil Nut 500gm</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5 text-end">
+                                <h5 class="fw-bold">₹1,445.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products col-md-12 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7">
+                                <div class="d-flex align-items-center">
+                                    <img width="100" height="100" src="assets/images/03.webp" alt="">
+                                    <span class="num position-relative badge rounded-pill bg-light text-dark">7</span>
+                                    <span class="text-black-50 fw-bold ms-2">Healthy Brazil Nut 500gm</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5 text-end">
+                                <h5 class="fw-bold">₹1,445.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products col-md-12 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7">
+                                <div class="d-flex align-items-center">
+                                    <img width="100" height="100" src="assets/images/04.webp" alt="">
+                                    <span class="num position-relative badge rounded-pill bg-light text-dark">7</span>
+                                    <span class="text-black-50 fw-bold ms-2">Healthy Brazil Nut 500gm</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5 text-end">
+                                <h5 class="fw-bold">₹1,445.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12 col-lg-7 mb-4">
+                        <form id="payment-form">
+                            <label for="payment-method">Select Payment Method:</label>
+                            <select id="payment-method" name="payment-method">
+                                <option value="paypal">PayPal</option>
+                                <option value="stripe" selected>Stripe</option>
+                            </select>
+                            <div id="paypal-form" style="display: none;">
+                                <!-- PayPal payment form fields go here -->
+                                <label for="paypal-email">PayPal Email:</label>
+                                <input type="email" id="paypal-email" name="paypal-email" required>
+                            </div>
+                            <div id="stripe-form">
+                                <!-- Stripe payment form fields go here -->
+                                <label for="card-number">Card Number:</label>
+                                <input type="text" id="card-number" name="card-number" required>
+                                <label for="expiry">Expiry Date:</label>
+                                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                                <label for="cvv">CVV:</label>
+                                <input type="text" id="cvv" name="cvv" required>
+                            </div>
+                            <button class="btn btn-success w-100" type="submit">Pay Now</button>
+                        </form>
+                    </div>
+                    <div class="total col-lg-5 col-md-12 pt-3">
+                        <div class="row">
+                            <div class="col-7 text-black-50 fw-bold">
+                                <h5>SUBTOTAL</h5>
+                                <h5>SHIPPING</h5>
+                                <h5>TOTAL</h5>
+                            </div>
+                            <div class="col-5">
+                                <p class="mb-2 fw-bold">₹1,885.00</p>
+                                <p class="mb-2 fw-bold">₹3,800.00</p>
+                                <p class="mb-2 fw-bold">INR ₹5,685.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- End Content  -->
+
+
+
+
+    <!-- Start Footer -->
+    <footer id="colophon" class="site-footer" role="contentinfo" itemscope="itemscope"
+        itemtype="http://schema.org/WPFooter">
+        <div class="site-footer__content">
+            <nav id="footer-nav" class="site-footer__nav">
+                <div class="menu-footer-menu-container">
+                    <ul id="menu-footer-menu" class="menu">
+                        <li id="menu-item-241"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-241">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li id="menu-item-387"
+                            class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-387">
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li id="menu-item-1331"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1331"><a
+                                href="recipes.html">Recipes</a></li>
+                        <li id="menu-item-5592"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5592"><a
+                                href="BestSellers.html">Best Selling</a></li>
+                        <li id="menu-item-511"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-511"><a
+                                href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="site-footer__social">
+                <ul>
+                    <li><a rel="noopener noreferrer" href="https://twitter.com/blissofearth" target="_blank"><i
+                                class="fab fa-twitter"></i>
+                            <use xlink:href="#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li><a rel="noopener noreferrer" href="https://www.pinterest.com/blissofearth/" target="_blank"><i
+                                class="fab fa-pinterest-p"></i>
+                            <use xlink:href="#icon-pinterest"></use>
+                            </svg>
+                        </a></li>
+                    <li><a rel="noopener noreferrer" href="https://web.facebook.com/blissofearth" target="_blank"><i
+                                class="fab fa-facebook-square"></i>
+                            <use xlink:href="#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li><a rel="noopener noreferrer" href="https://www.instagram.com/blissofearth/" target="_blank"><i
+                                class="fab fa-instagram"></i>
+                            <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-footer__content__secondary mt-3">
+            <p class="copyright">© 2023 Bliss Of Earth ® • All Rights Reserved </p>
+        </div>
+    </footer>
+    <!-- <footer class="bg-dark" id="tempaltemo_footer">
+            <div class="container">
+                <div class="row">
+    
+                    <div class="col-md-4 pt-5">
+                        <h2 class="h2 text-success border-bottom pb-3 border-light logo">Bliss Of Earth Shop</h2>
+                        <ul class="list-unstyled text-light footer-link-list">
+                            <li>
+                                <i class="fas fa-map-marker-alt fa-fw"></i>
+                                123 Consectetur at ligula 10660
+                            </li>
+                            <li>
+                                <i class="fa fa-phone fa-fw"></i>
+                                <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope fa-fw"></i>
+                                <a class="text-decoration-none" href="mailto:info@company.com">BlissOfEarth@company.com</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-4 pt-5">
+                        <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                        <ul class="list-unstyled text-light footer-link-list">
+                            <li><a class="text-decoration-none" href="#">Healthy Salt</a></li>
+                            <li><a class="text-decoration-none" href="#">Edible Seeds</a></li>
+                            <li><a class="text-decoration-none" href="#">Organic Spices</a></li>
+                            <li><a class="text-decoration-none" href="#">99.8% REB-A Stevia</a></li>
+                            <li><a class="text-decoration-none" href="#">Cocoa Powder</a></li>
+                            <li><a class="text-decoration-none" href="#">Herbs & Powders</a></li>
+                            <li><a class="text-decoration-none" href="#">Natural Skin Care</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-4 pt-5">
+                        <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                        <ul class="list-unstyled text-light footer-link-list">
+                            <li><a class="text-decoration-none" href="#">Home</a></li>
+                            <li><a class="text-decoration-none" href="#">About Us</a></li>
+                            <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
+                            <li><a class="text-decoration-none" href="#">FAQs</a></li>
+                            <li><a class="text-decoration-none" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
+                <div class="row text-light mb-4">
+                    <div class="col-12 mb-3">
+                        <div class="w-100 my-3 border-top border-light"></div>
+                    </div>
+                    <div class="col-auto me-auto">
+                        <ul class="list-inline text-left footer-icons">
+                            <li class="list-inline-item border border-light rounded-circle text-center">
+                                <a class="text-light text-decoration-none" target="_blank"
+                                    href="https://www.facebook.com/blissofearth?_rdc=1&_rdr"><i
+                                        class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                            </li>
+                            <li class="list-inline-item border border-light rounded-circle text-center">
+                                <a class="text-light text-decoration-none" target="_blank"
+                                    href="https://www.instagram.com/blissofearth/"><i
+                                        class="fab fa-instagram fa-lg fa-fw"></i></a>
+                            </li>
+                            <li class="list-inline-item border border-light rounded-circle text-center">
+                                <a class="text-light text-decoration-none" target="_blank"
+                                    href="https://twitter.com/blissofearth/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <label class="sr-only" for="subscribeEmail">Email address</label>
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control bg-dark border-light" id="subscribeEmail"
+                                placeholder="Email address">
+                            <div class="input-group-text btn-success text-light">Subscribe</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w-100 bg-black py-3">
+                <div class="container">
+                    <div class="row pt-2">
+                        <div class="col-12">
+                            <p class="text-left text-light">
+                                Copyright &copy; 2023 Bliss Of Earth
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+    <!-- End Footer -->
+    <!-- Start Btn To Top -->
+    <div class="top-btn">
+        <div class="container">
+            <button class="btn btn-success btn-top fs-4" id="btn-top" title="Go to top"><i
+                    class="fas fa-arrow-alt-circle-up"></i></button>
+        </div>
+    </div>
+    <!-- End Btn To Top -->
+    <!-- Start Script -->
+    <script src="https://js.stripe.com/v3/"></script>
+
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/ShowBtn.js"></script>
+    <script src="assets/js/breadcrumb.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha384-Qg00WFl9r0Xr6rUqNLv1ffTSSKEFFCDCKVyHZ+sVt8KuvG99nWw5RNvbhuKgif9z"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVpTOIoub+OrCXa"></script>
+    <!-- End Script -->
+</body>
+
+</html>

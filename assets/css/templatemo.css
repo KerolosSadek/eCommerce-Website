@@ -1088,6 +1088,68 @@ a:hover {
   transition: all .4s ease-in-out;
 }
 
+/* Payment Page */
+#payment-form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#payment-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#payment-form select,
+#payment-form input[type="text"],
+#payment-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+#payment-form button[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#payment-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.content-payment .products {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-payment .num {
+  bottom: 50px;
+  right: 50px;
+}
+
+.content-payment .total {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 130px;
+}
+
 /* button to top */
 .btn-top {
   position: fixed;
