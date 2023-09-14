@@ -23,12 +23,12 @@ const hCards = document.querySelectorAll('.hide.d-none');
 
 let num = 0;
 showButton.addEventListener('click', () => {
-    for (let i = num; i < num + 6; i++) {
+    for (let i = num; i < num + 8; i++) {
         if (hCards[i]) {
             hCards[i].classList.remove('d-none');
         }
     }
-    num += 6;
+    num += 8;
     if (num >= hCards.length) {
         showButton.classList.add('disabled');
         showButton.textContent = 'No More Product';
